@@ -33,4 +33,8 @@ function retina() {
 	});
 };
  
+$('.click-heart').on('click', function(){
+  $(this).toggleClass('animated-heart');
+});
+
 $(document).ready(retina);
