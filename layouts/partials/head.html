@@ -8,6 +8,9 @@
 		    enable_page_level_ads: true
 		  });
 		</script>
+		{{ if .Site.Params.enableGoogleAnalytics }}
+		  {{ template "_internal/google_analytics.html" . }}
+		{{ end }}
 		<meta name="google-site-verification" content="wffAtsDq6TaqYe7BsBk77j-70hUYALlSruOvP6eWFOc" />
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
